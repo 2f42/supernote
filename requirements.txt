@@ -1,5 +1,6 @@
 attrs==21.4.0
 click==8.0.4
+coverage==6.3.2
 flake8==4.0.1
 Flask==2.0.3
 importlib-metadata==4.2.0
@@ -15,6 +16,7 @@ pycodestyle==2.8.0
 pyflakes==2.4.0
 pyparsing==3.0.7
 pytest==7.0.1
+pytest-cov==3.0.0
 tomli==2.0.1
 typing-extensions==4.1.1
 Werkzeug==2.0.3
