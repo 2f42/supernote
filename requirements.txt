@@ -13,7 +13,6 @@ pyflakes==2.4.0
 pyparsing==3.0.7
 pytest==7.0.1
 pytest-cov==3.0.0
--e git+https://github.com/baconsenpaii/supernote.git@536bde3f1d832d90afa2518130a992bcf1e93d1b#egg=supernote
 tomli==2.0.1
 typing-extensions==4.1.1
 zipp==3.7.0
