@@ -21,7 +21,9 @@ def metadata_path(*subpath: str) -> os.PathLike:
 
 
 def init_workspace():
-    """Initialise the workspace with a .metadata directory."""
+    """
+    Initialise the workspace with a .metadata directory.
+    """
 
     # Create .metadata directory
     try:
@@ -35,8 +37,9 @@ def init_workspace():
 
 
 def hash_object(data: bytes, obj_type: ObjectType, write: bool = False) -> str:
-    """Calculates the SHA-1 hash of some data, and
-       write it to the object directory if write is True.
+    """
+    Calculates the SHA-1 hash of some data, and
+    write it to the object directory if write is True.
     """
 
     header = f"{obj_type.value} {len(data)}".encode()
@@ -54,9 +57,10 @@ def hash_object(data: bytes, obj_type: ObjectType, write: bool = False) -> str:
 
 
 def find_object(sha1: str) -> os.PathLike:
-    """Find an object with the given SHA-1 hash,
-       return the path to that object.
-       Raises ValueError if there are no objects that match.
+    """
+    Find an object with the given SHA-1 hash,
+    return the path to that object.
+    Raises ValueError if there are no objects that match.
     """
 
     if len(sha1) < 2:
@@ -74,8 +78,9 @@ def find_object(sha1: str) -> os.PathLike:
 
 
 def read_object(sha1: str) -> Tuple[ObjectType, bytes]:
-    """Find an object with the given SHA-1 hash,
-       return the data contained.
+    """
+    Find an object with the given SHA-1 hash,
+    return the data contained.
     """
 
     path = find_object(sha1)
