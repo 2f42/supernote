@@ -30,7 +30,6 @@ def init_workspace():
         print("Initialising workspace...")
         os.mkdir(metadata_path())
         os.mkdir(metadata_path("objects"))
-        os.mkdir(metadata_path("heads"))
         os.mkdir(metadata_path("refs"))
     except FileExistsError:
         print("Workspace already initialised!")
