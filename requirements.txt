@@ -14,5 +14,6 @@ pyparsing==3.0.7
 pytest==7.0.1
 pytest-cov==3.0.0
 tomli==2.0.1
+tomli-w==1.0.0
 typing-extensions==4.1.1
 zipp==3.7.0
